@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fable_tools": {
+      "command": "python",
+      "args": [
+        "-m",
+        "fable_orchestrator"
+      ]
+    }
+  }
+}
