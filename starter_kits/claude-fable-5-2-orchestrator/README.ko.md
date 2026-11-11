@@ -15,23 +15,28 @@
 
 ### 1. 환경 설정
 ```bash
-git clone https://github.com/kodwoo1/ai-tech-brief.git
+git clone https://github.com/eroica-ai/ai-tech-brief.git
 cd starter_kits/claude-fable-5-2-orchestrator
-pip install anthropic
+pip install -r requirements.txt
 cp .env.example .env
-# .env 파일에 ANTHROPIC_API_KEY 입력
+# .env 파일에 ANTHROPIC_API_KEY 입력 (미입력 시 --dry-run 시뮬레이션 모드 지원)
 ```
 
 ### 2. 오케스트레이터 실행
 ```bash
+# 기본 실행 (WebSocket 클라이언트 작업)
 python fable_orchestrator.py
+
+# 커스텀 작업 지정 및 결과 파일 생성
+python fable_orchestrator.py --task "JWT 인증 및 Redis 토큰 블랙리스트 핸들러" --out auth_service.py
+
+# API 키 없이 파이프라인 시뮬레이션 및 비용 분석
+python fable_orchestrator.py --dry-run
 ```
 
 ---
 
-⚡ [영상 속 추천 툴 & 제휴 링크]
-• Anthropic Claude Console: https://console.anthropic.com/ (Claude 공식 콘솔 바로가기 (Fable 5.2 지원))
-※ 위 링크를 통해 결제 시 영상 제작에 소정의 수수료가 지원될 수 있습니다.
+
 
 ---
 ⭐ 도움이 되셨다면 상단의 **Star** 버튼을 눌러주세요!
