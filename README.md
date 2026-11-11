@@ -1,24 +1,42 @@
-# 🚀 AI Tech Brief & Vibe Coding Starter Kits
+# 🚀 Claude Fable 5.2 Cost-Efficient Orchestrator Starter Kit
 
-Welcome to **AI Tech Brief (Code Artisan)**!  
-This repository contains open-source starter kits, multi-agent orchestrators, and prompt blueprints featured in our YouTube videos.
-
-[🇰🇷 한국어 안내 (Korean README)](./README.ko.md)
+Practical multi-agent orchestration boilerplate that unlocks **Anthropic's flagship Claude Fable 5.2** while **cutting token costs by over 90%**.
 
 ---
 
-## 📂 Available Starter Kits
-
-| Starter Kit | Tech Stack | Description | Links |
-| :--- | :--- | :--- | :--- |
-| **Claude Fable 5.2 Orchestrator** | Python · Claude API · Multi-Agent | Cut token costs by 88% while leveraging Anthropic's flagship Fable 5.2 | [Explore](./starter_kits/claude-fable-5-2-orchestrator/) |
-
----
-
-## ⚡ Featured Recommendations
-- [Anthropic Claude Official Console](https://console.anthropic.com/)
-- [Cursor AI IDE](https://www.cursor.com)
+## 📌 Architecture Philosophy
+- **Fable 5.2 (Architect / Orchestrator)**: Used strictly for root-cause analysis, complex reasoning, and structural code reviews.
+- **Sonnet / Haiku (Workers)**: Handles repetitive code generation, unit test execution, and file I/O.
+- ➔ Reduces overall token expenses from **\$40/M down to under \$5/M** compared to brute-force Fable queries.
 
 ---
 
-⭐ Please **Star** this repository if you find our open-source blueprints helpful!
+## 🛠️ Quick Start
+
+### 1. Setup
+```bash
+git clone https://github.com/eroica-ai/ai-tech-brief.git
+cd starter_kits/claude-fable-5-2-orchestrator
+pip install -r requirements.txt
+cp .env.example .env
+# Enter your ANTHROPIC_API_KEY in .env (or use --dry-run for zero-cost simulation)
+```
+
+### 2. Run Orchestrator
+```bash
+# Default run
+python fable_orchestrator.py
+
+# Custom coding task
+python fable_orchestrator.py --task "JWT authentication with Redis blacklist" --out auth_service.py
+
+# Zero-cost pipeline simulation & benchmark
+python fable_orchestrator.py --dry-run
+```
+
+---
+
+
+
+---
+⭐ If this helped your workflow, please leave a **Star** on GitHub!
