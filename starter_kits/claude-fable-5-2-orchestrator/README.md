@@ -15,23 +15,28 @@ Practical multi-agent orchestration boilerplate that unlocks **Anthropic's flags
 
 ### 1. Setup
 ```bash
-git clone https://github.com/kodwoo1/ai-tech-brief.git
+git clone https://github.com/eroica-ai/ai-tech-brief.git
 cd starter_kits/claude-fable-5-2-orchestrator
-pip install anthropic
+pip install -r requirements.txt
 cp .env.example .env
-# Enter your ANTHROPIC_API_KEY in .env
+# Enter your ANTHROPIC_API_KEY in .env (or use --dry-run for zero-cost simulation)
 ```
 
 ### 2. Run Orchestrator
 ```bash
+# Default run
 python fable_orchestrator.py
+
+# Custom coding task
+python fable_orchestrator.py --task "JWT authentication with Redis blacklist" --out auth_service.py
+
+# Zero-cost pipeline simulation & benchmark
+python fable_orchestrator.py --dry-run
 ```
 
 ---
 
-⚡ [Featured Tools & Recommended Links]
-• Anthropic Claude Console: https://console.anthropic.com/ (Claude 공식 콘솔 바로가기 (Fable 5.2 지원))
-※ Some links above are affiliate links that support this channel at no extra cost to you.
+
 
 ---
 ⭐ If this helped your workflow, please leave a **Star** on GitHub!
